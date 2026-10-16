@@ -19,7 +19,8 @@ MODEL_PATH = ROOT / "models" / "siamese_model.keras"
 # Webcam crop: a 250x250 box around the face
 CROP_Y, CROP_X, CROP_SIZE = 120, 200, 250
 
-SAMPLES_PER_CLASS = 300
+SAMPLES_PER_CLASS = 3000   # after augmentation (~300 originals x 10)
+SHUFFLE_BUFFER = 10000
 BATCH_SIZE = 16
 EPOCHS = 50
 LEARNING_RATE = 1e-4

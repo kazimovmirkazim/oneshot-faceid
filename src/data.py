@@ -73,7 +73,7 @@ def build_datasets(n: int = config.SAMPLES_PER_CLASS):
 
     data = data.map(preprocess_twin, num_parallel_calls=tf.data.AUTOTUNE)
     data = data.cache()
-    data = data.shuffle(buffer_size=1024, seed=42, reshuffle_each_iteration=False)
+    data = data.shuffle(buffer_size=config.SHUFFLE_BUFFER, seed=42, reshuffle_each_iteration=False)
 
     total = 2 * n_pairs
     n_train = round(total * config.TRAIN_SPLIT)
