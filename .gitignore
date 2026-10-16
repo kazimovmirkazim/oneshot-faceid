@@ -1,0 +1,15 @@
+# Personal images and trained weights stay local (privacy + size)
+data/
+application_data/
+training_checkpoints/
+models/
+*.keras
+*.h5
+lfw*/
+*.zip
+*.tgz
+
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+.DS_Store

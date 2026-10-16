@@ -1,0 +1,5 @@
+tensorflow>=2.15
+opencv-python>=4.8
+numpy
+matplotlib
+kivy>=2.2        # only needed for the desktop app in app/
